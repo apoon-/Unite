@@ -1,0 +1,190 @@
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800);
+
+body { 
+  font-family: 'Open Sans', sans-serif; font-weight: 300; 
+  background-color: #242328;
+}
+
+.logo {
+  position: absolute;
+  width: 300px;
+  height: 300px;
+  color: white;
+  font-weight: 100;
+  text-align: center;
+  margin: 1em 0 0 -150px;
+  left: 50%;
+  -webkit-transition: all 1s linear;
+}
+
+.logo-out {
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  z-index: -1;
+  position: relative;
+  background: #f7c15d; /* Old browsers */
+  background: -moz-linear-gradient(top,  #f7c15d 0%, #9ed5b6 50%, #05d6f9 100%); /* FF3.6+ */
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#f7c15d), color-stop(50%,#9ed5b6), color-stop(100%,#05d6f9)); /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(top,  #f7c15d 0%,#9ed5b6 50%,#05d6f9 100%); /* Chrome10+,Safari5.1+ */
+  background: linear-gradient(to bottom,  #f7c15d 0%,#9ed5b6 50%,#05d6f9 100%); /* W3C */
+  -webkit-animation-name:             rotate; 
+  -webkit-animation-duration:         5s; 
+  -webkit-animation-iteration-count:  infinite;
+  -webkit-animation-timing-function: linear;
+}
+
+@-webkit-keyframes rotate {
+  from {
+    -webkit-transform: rotate(0deg);
+  }
+  to { 
+    -webkit-transform: rotate(360deg);
+  }
+}
+
+.logo-in {
+  width: 230px;
+  height: 230px;
+  background-color: #242328;
+  border-radius: 50%;
+  z-index: 1;
+  margin: -265px auto;
+}
+
+.logo-in img {
+  width: 240px;
+  height: 240px;
+  margin: -4px 0 0 -4px;
+}
+
+.search {
+  position: absolute;
+  width: 300px;
+  height: 300px;
+  margin: 25em 0 0 -150px;
+  left: 50%;
+}
+
+.search-input {
+  width: 285px;
+  height: 30px;
+  background-color: #2B2F32;
+  box-shadow: inset -1px 1px 3px 0px rgba(0, 0, 0, 0.55), inset 0px -1px 1px 0px rgba(255, 255, 255, 0.1);
+  font-family: inherit;
+  font-size: 0.75em;
+  border: 0;
+  box-shadow: 0;
+  margin-bottom: 1em;
+  border-radius: 5px;
+  color: white;
+  padding-left: 15px;
+}
+
+.search-btn {
+  display: block;
+  width: 300px;
+  height: 40px;
+  font-family: inherit;
+  background-color: #05D5FC;
+  transition: background-color 300ms ease-out;
+  -webkit-transition: background-color 300ms ease-out;
+  border: 0;
+  margin: 0 auto;
+  color: white;
+  border-radius: 3px;
+  margin-top: 20px;
+  font-size: 0.9em;
+  font-weight: 600;
+  box-shadow: inset 0px 2px 2px 0px rgba(255, 255, 255, 0.35);
+  transition: background-color 300ms ease-out;
+  -webkit-transition: background-color 300ms ease-out;
+}
+
+.search-btn:hover {
+  background-color: #008cba;
+}
+
+.search-btn:hover {
+  background-color: 
+}
+
+.result {
+  position: absolute;
+  top: 60em;
+  margin: -3em 0 0 0;
+  width: 100%;
+}
+
+.fullname {
+  color: #777;
+  font-size: 1.2em;
+  font-weight: 600;
+  width: 80%;
+  background-color: #2B2E31;
+  padding: 10px 10px 10px 50px;
+  margin: 0 auto 2em auto;
+}
+
+.fullname span {
+  font-size: 1.5em;
+  color: #20D1ED;
+  margin-right: 20px;
+}
+
+.profile-pic {
+  float: right;
+  padding-right: 8em;
+}
+
+.pic-out {
+  width: 110px;
+  height: 110px;
+  border-radius: 50%;
+  z-index: -1;
+  position: relative;
+  background: #f7c15d; /* Old browsers */
+  background: -moz-linear-gradient(top,  #f7c15d 0%, #9ed5b6 50%, #05d6f9 100%); /* FF3.6+ */
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#f7c15d), color-stop(50%,#9ed5b6), color-stop(100%,#05d6f9)); /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(top,  #f7c15d 0%,#9ed5b6 50%,#05d6f9 100%); /* Chrome10+,Safari5.1+ */
+  background: linear-gradient(to bottom,  #f7c15d 0%,#9ed5b6 50%,#05d6f9 100%);
+}
+
+.pic-border {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin: -41px 0 0 -41px;
+  padding: 2px;
+  width: 80px;
+  height: 80px;
+  background-color: #7E7E80;
+  border-radius: 50%;
+}
+
+.pic-border img {
+  border-radius: 50%;
+  width: 80px;
+  height: 80px;
+  z-index: 1;
+  margin: 0 auto;
+}
+
+.bio {
+  padding-left: 3em;
+  color: white;
+  width: 70%;
+  float: left;
+}
+
+.bio h1 {
+  color: #969697;
+  margin: 0;
+  font-weight: 100;
+}
+
+.bio h2 {
+  color: #C6A062;
+  margin: 0;
+  font-weight: 100;
+}
