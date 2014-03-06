@@ -132,6 +132,13 @@ body {
   margin-right: 20px;
 }
 
+.info {
+  position: absolute;
+  left: 50%;
+  width: 80%;
+  margin-left: -40%;
+}
+
 .profile-pic {
   float: right;
   padding-right: 8em;
@@ -171,7 +178,7 @@ body {
 }
 
 .bio {
-  padding-left: 9em;
+  padding-left: 5em;
   color: white;
   width: 70%;
   float: left;
@@ -181,18 +188,22 @@ body {
 .bio h1 {
   color: #969697;
   margin: 0;
-  font-weight: 100;
+  font-weight: 400;
+  font-size: 1.7em;
+  text-align: right;
 }
 
 .bio h2 {
   color: #C6A062;
   margin: 0;
-  font-weight: 100;
+  font-weight: 500;
+  font-size: 1em;
+  text-align: right;
 }
 
 .network {
   position: absolute;
-  top: 60em;
+  top: 100em;
   left: 50%;
   width: 800px;
   margin-left: -400px;
@@ -202,19 +213,35 @@ body {
   max-width: 190px;
   float: left;
   margin-right: 13px;
+  transition: opacity 300ms ease-in;
+  -webkit-transition: opacity 300ms ease-in;
 }
 
 .network img:last-child {
   margin-right: 0;
 }
 
+.network img:hover {
+  cursor: pointer;
+  opacity: 0.5;
+  transition: opacity 300ms ease-out;
+  -webkit-transition: opacity 300ms ease-out;
+}
+
 .chart {
-  margin-top: 3em;
   position: absolute;
   width: 550px;
   left: 50%;
   margin-left: -275px;
   top: 20em;
+}
+
+.chart h1 {
+  color: white;
+  margin: 0 0 1em 0;
+  font-weight: 400;
+  font-size: 1.7em;
+  text-align: center;
 }
 
 .chart #gh-chart {
@@ -247,4 +274,8 @@ body {
 
 .chart .legend .five {
   color: #4D5360;
+}
+
+.clicked:hover {
+  cursor: pointer;
 }
