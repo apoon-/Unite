@@ -119,7 +119,7 @@ body {
 .fullname {
   color: #777;
   font-size: 1.2em;
-  font-weight: 600;
+  font-weight: 500;
   width: 80%;
   background-color: #2B2E31;
   padding: 10px 10px 10px 50px;
@@ -171,10 +171,11 @@ body {
 }
 
 .bio {
-  padding-left: 3em;
+  padding-left: 9em;
   color: white;
   width: 70%;
   float: left;
+  margin-bottom: 3em;
 }
 
 .bio h1 {
@@ -187,4 +188,63 @@ body {
   color: #C6A062;
   margin: 0;
   font-weight: 100;
+}
+
+.network {
+  position: absolute;
+  top: 60em;
+  left: 50%;
+  width: 800px;
+  margin-left: -400px;
+}
+
+.network img {
+  max-width: 190px;
+  float: left;
+  margin-right: 13px;
+}
+
+.network img:last-child {
+  margin-right: 0;
+}
+
+.chart {
+  margin-top: 3em;
+  position: absolute;
+  width: 550px;
+  left: 50%;
+  margin-left: -275px;
+  top: 20em;
+}
+
+.chart #gh-chart {
+  float: left;
+}
+
+.chart .legend {
+  height: 300px;
+  float: right;
+  margin-left: 3em;
+  font-weight: 400;
+  font-size: 1.5em;
+}
+
+.chart .legend .one {
+  color: #F7464A;
+}
+
+.chart .legend .two {
+  color: #E2EAE9;
+}
+
+.chart .legend .three {
+  color: #D4CCC5;
+}
+
+.chart .legend .four {
+  color: #949FB1;
+}
+
+.chart .legend .five {
+  color: #4D5360;
 }
