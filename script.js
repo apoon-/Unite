@@ -5,15 +5,15 @@ $(document).ready(function() {
       console.log("reset");
       $(".clicked").css({'transform': 'scale(1)'}).animate({ "left": "50%", "top": "45px"}, 300).removeClass("clicked");
       $(".result").html("").fadeOut();
-      $(".network").html("").animate({"top":"100em"});
+      $(".network").html("").animate();
       $("#name").val("");
       $(".search").fadeIn(900);
     });
   };
 
   var network = function(){
-    $(".network").animate({ "top": "60em"}, 1800).append(
-      "<img src=\"pinterest.png\"><img src=\"youtube.png\"><img src=\"facebook.png\"><img src=\"twitter.png\">" 
+    $(".result").animate(1800).append(
+      "<div class=\"network\"><img src=\"pinterest.png\"><img src=\"youtube.png\"><img src=\"facebook.png\"><img src=\"twitter.png\"></div>" 
     );
   };
 

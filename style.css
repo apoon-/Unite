@@ -114,6 +114,7 @@ body {
   top: 60em;
   margin: -3em 0 0 0;
   width: 100%;
+  height: 100%;
 }
 
 .fullname {
@@ -133,9 +134,10 @@ body {
 }
 
 .info {
-  position: absolute;
+  position: relative;
   left: 50%;
   width: 80%;
+  height: 100px;
   margin-left: -40%;
 }
 
@@ -202,11 +204,12 @@ body {
 }
 
 .network {
-  position: absolute;
-  top: 100em;
+  position: relative;
+  background: 100em;
   left: 50%;
   width: 800px;
   margin-left: -400px;
+  margin-top: 20em;
 }
 
 .network img {
@@ -229,16 +232,19 @@ body {
 }
 
 .chart {
-  position: absolute;
+  position: relative;
   width: 550px;
+  height: 400px;
   left: 50%;
   margin-left: -275px;
-  top: 20em;
+  margin-top: 5em;
+  /* top: 20em; */
+  /* display: inline; */
 }
 
 .chart h1 {
   color: white;
-  margin: 0 0 1em 0;
+  margin: 3em 0 1em 0;
   font-weight: 400;
   font-size: 1.7em;
   text-align: center;
@@ -254,6 +260,8 @@ body {
   margin-left: 3em;
   font-weight: 400;
   font-size: 1.5em;
+  position: absolute;
+  right: 0;
 }
 
 .chart .legend .one {
